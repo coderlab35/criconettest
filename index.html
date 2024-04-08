@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criconet</title>
+    <!-- boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- main navigation bar  -->
+    <section class="navigation">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Pavilion
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="pages/Notice-Board.html" class="dropdown-item">Notice Board</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="pages/e-coaching-page-coach.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Coaching
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pages/e-coaching-player.html" class="dropdown-item">I am a player</a>
+                                <a href="pages/e-coaching-page-coach.html" class="dropdown-item">I am a coach</a>
+                                <a href="pages/Book-a-coach-Listing-of-Coaches.html" class="dropdown-item">Book a coach</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Streaming
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pages/Live-Streaming.html" class="dropdown-item">Watch live Match</a>
+                                <a href="pages/Book-Live-Streaming-Form.html" class="dropdown-item">Book Live Streaming</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Academies
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pages/academy-details.html" class="dropdown-item">Join Acedemiy</a>
+                                <a href="pages/academylisting.html" class="dropdown-item">List Your Acedemiy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="pages/Partners-Page.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Partner With Us
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Coaches</a>
+                                <a href="#" class="dropdown-item">Academies</a>
+                                <a href="#" class="dropdown-item">Tournament Organizers</a>
+                                <a href="#" class="dropdown-item">Ground Owners</a>
+                                <a href="#" class="dropdown-item">Franchise Partners</a>
+                                <a href="#" class="dropdown-item">Sponsors</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav mt-xl-0 mt-3">
+                        <li class="nav-item dropdown">
+                            <form action="">
+                                <div class="search_wrap">
+                                    <div class="search_shadow"></div>
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <div class="button_shadow">
+                                        <button type="submit">
+                                            <img src="images/search.svg" alt="search_icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="c_btn l_btn">
+                                <a data-bs-toggle="modal" data-bs-target="#login">
+                                    <img src="images/login-btn.svg" alt="btn"> | Login
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- end main navigation bar  -->
+
+    <!-- main hero section  -->
+    <section class="main_hero_sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="hero_left white">
+                        <h1>Watch. Learn. Bond.</h1>
+                        <h2>Your ultimate Cricketing hang-out, right on your Mobile Device</h2>
+                        <p>
+                            Welcome to India's premier online cricket club, where fans, players, coaches, scouts, and cricket 
+                            enthusiasts unite to create a community that lives and breathes cricket. Immerse yourself in interactive 
+                            e-Coaching, live local matches, and engaging cricket conversations - all with a click of a button
+                        </p>
+                        <div class="hero_btn_wrap d-flex align-items-center">
+                            <div class="c_btn l_btn">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#register">
+                                    <img src="images/login-btn.svg" alt="btn"> Sign Up
+                                </a>
+                            </div>
+                            <div class="c_btn n_btn ml-30">
+                                <a href="#"> Download App <img src="images/google-play.png" alt="playstore_btn"></a>
+                            </div>
+                            <a href="#" class="ml30"><i class="fa fa-apple fs-3 text-white ml-30" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="hero_right">
+                        <div class="main_bg">
+                            <img src="images/main-bg.png" alt="bg">
+                        </div>
+                        <div class="main_img">
+                            <img src="images/home-main.png" alt="main-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main hero section  -->
+
+    <!-- service section  -->
+    <section class="service_sec d_padding">
+        <div class="heading text-center">
+            <h2>Our Services</h2>
+        </div>
+        <div class="service_tab_wrap">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <div class="service_tab service_tab1">
+                        <h2 class="accordion-header epavilion" id="flush-headingOne">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                e- Pavilion
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="flush-collapseOne" class="container accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="hero_right">
+                                        <div class="main_bg">
+                                            <img src="images/main-bg.png" alt="bg">
+                                        </div>
+                                        <div class="main_img">
+                                            <img src="images/home-main.png" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="heading mb-2">
+                                        <h5>e-Pavilion</h5>
+                                        <h2>Virtual Club. Real Passion.</h2>
+                                    </div>
+                                     <p>
+                                        Join our thriving global online cricket community, where you can connect with cricket fans, 
+                                        players, coaches, and scouts.  Our platform revolves solely around cricket, allowing you to 
+                                        share your insights, experiences, and network with like-minded people who share your passion 
+                                        for the game.
+                                     </p>
+                                    <div class="c_btn l_btn mt-3 f_btn">
+                                        <a href="#">Explore</a>
+                                    </div>  
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="service_tab service_tab2">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                e- Coaching
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="flush-collapseTwo" class="container accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="hero_right">
+                                        <div class="main_bg">
+                                            <img src="images/main-bg.png" alt="bg">
+                                        </div>
+                                        <div class="main_img">
+                                            <img src="images/home-main.png" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="heading mb-2">
+                                        <h5>e-Coaching</h5>
+                                        <h2>Virtual Coaching. Real Results.</h2>
+                                    </div>
+                                     <p>
+                                        Criconet is your one-stop destination for affordable and convenient world-class training from accredited coaches. Connect with your 
+                                        coach for an interactive session to sharpen your skills right from your mobile. Transform your game with flexible, 1:1 Live online 
+                                        coaching sessions, from the comfort of your home. 
+                                     </p>
+                                    <div class="d-flex">
+                                        <div class="c_btn l_btn mt-3 f_btn">
+                                            <a href="#">Find a Coach</a>
+                                        </div>
+                                        <div class="c_btn b_btn big-p mt-3 ms-3">
+                                            <a href="#">Register as a Coach</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="service_tab service_tab3">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                e- Streaming
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="flush-collapseThree" class="container accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="hero_right">
+                                        <div class="main_bg">
+                                            <img src="images/main-bg.png" alt="bg">
+                                        </div>
+                                        <div class="main_img">
+                                            <img src="images/home-main.png" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="heading mb-2">
+                                        <h5>e-Streaming</h5>
+                                        <h2>Live Local Cricket. Anytime. Anywhere.</h2>
+                                    </div>
+                                     <p>
+                                        Live stream your local leagues, club, and corporate-level tournaments on Criconet and increase 
+                                        your audience. Get access to multiple cameras, ball tracking, DRS, scoreboards, and much more!
+                                     </p>
+                                     <div class="d-flex">
+                                        <div class="c_btn l_btn mt-3 f_btn">
+                                            <a href="#">Watch More</a>
+                                        </div>
+                                        <div class="c_btn b_btn big-p mt-3 ms-3">
+                                            <a href="#">Book Live Streaming for Your Match or Tournament</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="service_tab service_tab4">
+                        <h2 class="accordion-header" id="flush-headingfour">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                aria-controls="flush-collapsefour">
+                                e- Academies
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="flush-collapsefour" class="container accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="hero_right">
+                                        <div class="main_bg">
+                                            <img src="images/main-bg.png" alt="bg">
+                                        </div>
+                                        <div class="main_img">
+                                            <img src="images/home-main.png" alt="main-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6">
+                                    <div class="heading mb-2">
+                                        <h5>e-Academy</h5>
+                                        <h2>Virtual Net. Real Results.</h2>
+                                    </div>
+                                     <p>
+                                        <b>For Players: </b> Our platform connects talented players to cricket academies across the world. An ever-growing 
+                                        number of academies have partnered with us to offer integrated hybrid (online and on-pitch) 
+                                        coaching modules, giving the best of both worlds to players like you.
+                                     </p>
+                                     <p>
+                                        <b>For Academies: </b>Our e-Academy model enables academies to engage with a larger audience as well as take their academy operations online, simplifying tasks such as managing coaches and students, scheduling training sessions (online or in-person), etc. You can also get special conditions to live-stream academy tournaments!
+                                     </p>
+                                     <div class="d-flex">
+                                        <div class="c_btn l_btn mt-3 f_btn">
+                                            <a href="#">Sign Up</a>
+                                        </div>
+                                        <div class="c_btn b_btn big-p mt-3 ms-3">
+                                            <a href="#">Go hybrid, take your academy and coaching online with Criconet</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end service section  -->
+    <!-- about section  -->
+    <section class="about_sec">
+        <div class="container">
+            <div class="about_wrap">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about_left position-relative">
+                            <div class="two_main_bg home-about">
+                                <img src="images/home_about_sec.png" alt="about">
+                            </div>
+                            <div class="two_img d-flex">
+                                <div class="two-left-img me-1 ms-3">
+                                    <img src="images/home-main.png" alt="main-img"> 
+                                </div>
+                                <div class="two-right-img ms-1">
+                                    <img src="images/home-main.png" alt="main-img"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about_right_wrap white">
+                            <h2 class="secondary-heading mb-2">We Connect Cricket. Like Never Before.</h2>
+                            <p>Criconet was born from an unwavering love for cricket of our Founder, Mr Veer Sagar. Think of our platform as the digital cricket stadium, where dreams step up to the crease, and the pulse of cricket resonates through every click.</p>
+                            <div class="home-about-btn-wrap d-flex mt-3">
+                                <div class="c_btn l_btn">
+                                    <a href="pages/about.html">Know More</a>
+                                </div>
+                                <div class="c_btn n_btn ml-30 big-p">
+                                    <a href="#"> Partner with us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section  -->
+    <!-- Testimonials  -->
+    <section class="testimonials_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="heading">
+                        <h5>Testimonials</h5>
+                        <h2>Real Lives. <br>Real Impact.</h2>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9">
+                    <div class="testimonials_slider_wrap d-flex">
+                          <div class="swiper testimonials">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                    <div class="testimonials_main">
+                                        <div class="main_slider_img">
+                                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                        </div>
+                                        <div class="main_slider_content">
+                                            <h2 class="play_name">MAHESH SINGH</h2>
+                                            <h4 class="designation">COACH</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                        </div>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonials_main">
+                                    <div class="main_slider_img">
+                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    </div>
+                                    <div class="main_slider_content">
+                                        <h2 class="play_name">MAHESH SINGH</h2>
+                                        <h4 class="designation">COACH</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enimLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar diam, diam dui in risus mauris. Elit sagittis, arcu ut arcu scelerisque enim. Fusce aliquet at quis velit pharetra dolor ut. Arcu tempor. Elit sagittis, arcu ut arcu scelerisque enim</p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div thumbsSlider="" class="swiper testimonials_thumb">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Testimonials  -->
+    <!-- blog section  -->
+    <section class="home_blog d_padding">
+        <div class="container">
+            <div class="heading text-center white mb-30">
+                <h5>Blog</h5>
+                <h2>Insights. Commentary. Opinions.</h2>
+            </div>
+            <div class="blog_slider_wrap">
+                <div class="swiper blog_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog01.jfif"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Indian Team</span>
+                                    </div>
+                                    <h4>Rajat Patidar - A star on the rise?</h4>
+                                    <p>Another product from IPL manufacturing unit</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog02.png"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Cricket</span>
+                                    </div>
+                                    <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                                    <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog03.png"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Cricket</span>
+                                    </div>
+                                    <h4>5 Future Superstars from IPL 2022</h4>
+                                    <p>These 5 players will be representing their country soon</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog01.jfif"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Indian Team</span>
+                                    </div>
+                                    <h4>Rajat Patidar - A star on the rise?</h4>
+                                    <p>Another product from IPL manufacturing unit</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog02.png"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Cricket</span>
+                                    </div>
+                                    <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                                    <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog_slide">
+                                <a href="pages/Blog-single.html">
+                                <div class="blog_slide_img">
+                                    <img src="images/blog03.png"  alt="blog">
+                                </div>
+                                <div class="blog_slide_text_wrap">
+                                    <div class="blog_tag">
+                                        <span>Cricket</span>
+                                    </div>
+                                    <h4>5 Future Superstars from IPL 2022</h4>
+                                    <p>These 5 players will be representing their country soon</p>
+                                </div>
+                                <div class="blog_slide_footer">
+                                    <p class="name">By Kannan Nair</p>
+                                    <p class="date">June 31, 2022</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_slider_arrow">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4.5C20.1433 4.5 16.3731 5.64366 13.1664 7.78634C9.95962 9.92903 7.46026 12.9745 5.98435 16.5377C4.50844 20.1008 4.12228 24.0216 4.87469 27.8043C5.6271 31.5869 7.4843 35.0615 10.2114 37.7886C12.9385 40.5157 16.4131 42.3729 20.1957 43.1253C23.9784 43.8777 27.8992 43.4916 31.4623 42.0157C35.0255 40.5397 38.071 38.0404 40.2137 34.8336C42.3563 31.6269 43.5 27.8567 43.5 24C43.4901 18.8313 41.4324 13.8772 37.7776 10.2224C34.1228 6.56755 29.1687 4.50991 24 4.5ZM32.8875 24.5813C32.8057 24.763 32.6913 24.9282 32.55 25.0688L26.1938 31.425C26.0576 31.565 25.8942 31.6755 25.7135 31.7497C25.5329 31.8239 25.339 31.8601 25.1438 31.8563C24.9457 31.8605 24.7488 31.8245 24.5651 31.7503C24.3814 31.6762 24.2146 31.5655 24.075 31.425C23.7945 31.1438 23.6369 30.7628 23.6369 30.3656C23.6369 29.9684 23.7945 29.5875 24.075 29.3063L27.8813 25.5H16.5C16.1022 25.5 15.7206 25.342 15.4393 25.0607C15.158 24.7794 15 24.3978 15 24C15 23.6022 15.158 23.2206 15.4393 22.9393C15.7206 22.658 16.1022 22.5 16.5 22.5H27.8813L24.075 18.6938C23.8165 18.4084 23.6776 18.0346 23.687 17.6497C23.6965 17.2647 23.8536 16.8982 24.1259 16.6259C24.3982 16.3536 24.7647 16.1965 25.1497 16.187C25.5346 16.1776 25.9084 16.3165 26.1938 16.575L32.55 22.9313C32.6913 23.0718 32.8057 23.237 32.8875 23.4188C33.0377 23.7917 33.0377 24.2083 32.8875 24.5813Z" fill="#EDDC92"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4.5C27.8567 4.5 31.6269 5.64366 34.8336 7.78634C38.0404 9.92903 40.5397 12.9745 42.0156 16.5377C43.4916 20.1008 43.8777 24.0216 43.1253 27.8043C42.3729 31.5869 40.5157 35.0615 37.7886 37.7886C35.0615 40.5157 31.5869 42.3729 27.8043 43.1253C24.0216 43.8777 20.1008 43.4916 16.5377 42.0157C12.9745 40.5397 9.92903 38.0404 7.78634 34.8336C5.64365 31.6269 4.5 27.8567 4.5 24C4.50991 18.8313 6.56755 13.8772 10.2224 10.2224C13.8772 6.56755 18.8313 4.50991 24 4.5ZM15.1125 24.5813C15.1943 24.763 15.3087 24.9282 15.45 25.0688L21.8062 31.425C21.9424 31.565 22.1058 31.6755 22.2865 31.7497C22.4671 31.8239 22.661 31.8601 22.8562 31.8563C23.0543 31.8605 23.2512 31.8245 23.4349 31.7503C23.6186 31.6762 23.7854 31.5655 23.925 31.425C24.2055 31.1438 24.3631 30.7628 24.3631 30.3656C24.3631 29.9684 24.2055 29.5875 23.925 29.3063L20.1187 25.5H31.5C31.8978 25.5 32.2794 25.342 32.5607 25.0607C32.842 24.7794 33 24.3978 33 24C33 23.6022 32.842 23.2206 32.5607 22.9393C32.2794 22.658 31.8978 22.5 31.5 22.5H20.1187L23.925 18.6938C24.1835 18.4084 24.3224 18.0346 24.313 17.6497C24.3035 17.2647 24.1464 16.8982 23.8741 16.6259C23.6018 16.3536 23.2353 16.1965 22.8503 16.187C22.4654 16.1776 22.0916 16.3165 21.8062 16.575L15.45 22.9313C15.3087 23.0718 15.1943 23.237 15.1125 23.4188C14.9623 23.7917 14.9623 24.2083 15.1125 24.5813Z" fill="#EDDC92"/>
+                            </svg>
+                        </div>
+                    </div>
+                  </div>                      
+            </div>
+        </div>
+    </section>
+    <!-- end blog section  -->
+    <!-- Media Coverage -->
+    <section class="media_coverage_sec d_50_padding">
+        <div class="container">
+            <div class="heading text-center">
+                <h5>Media Coverage</h5>
+                <h2>Talk of the Town. Criconet Captures Headlines.</h2>
+            </div>
+            <div class="swiper brand_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand01.png" alt="loglo1">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand02.png" alt="loglo2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand03.png" alt="loglo1">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand04.png" alt="loglo4">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand02.png" alt="loglo2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand03.png" alt="loglo1">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand01.png" alt="loglo1">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand02.png" alt="loglo2">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand_slide">
+                        <img src="images/brand03.png" alt="loglo1">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+    </section>
+    <!-- end Media Coverage -->
+    <!-- cta section  -->
+    <section class="d_padding">
+        <div class="container">
+            <div class="cta_wrap">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="cta_text_wrap white">
+                            <h2 class="mb-20">Join Criconet’s <br>
+                                Ever Growing Community</h2>
+                            <a href="#"><p class="pb-20">Download the app and sign up on Criconet!</p></a>
+
+                            <div class="cta_btn_wrap">
+                                <a href="#" >
+                                    <img src="images/google-play-button.png" alt="btn">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="cta_img">
+                            <img src="images/cta.png" alt="cta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cta section  -->
+
+   <!-- footer   -->
+ <footer>
+    <div class="footer_top_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 my-3">
+                    <div class="footer_collum_wrap">
+                        <h4 class="footer_heading">Contact Us</h4>
+                        <div class="footer_contact mb-20">
+                            <ul>
+                                <li class="mb-20"><a href="tel:+918002631986"><i class="fa fa-phone fs-3 me-3" aria-hidden="true"></i> Tel: +918002631986</a></li>
+                                <li class="mb-20"><a href="#"><img src="images/whatsapp.svg" alt="whatsapp"> Whatsapp +918002631986</a></li>
+                                <li class="mb-20"><a href="#"><img src="images/mail.svg" alt="mail">Email: info@criconet.com</a></li>
+                                <li><a href="#"><i class="fa fa-address-book fs-3 me-3" aria-hidden="true"></i>
+                                    Address:
+                                    Plot No. 106, Udyog Vihar Industrial Area Phase VI, 
+                                    Sector 37, Gurugram, Haryana (INDIA) 122001    
+                                </a></li>
+                            </ul>
+                        </div>
+                        <h4 class="footer_heading">Support</h4>
+                        <div class="footer_btn">
+                            <a href="#">Download App <img src="images/google-play.png" alt="Play store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 my-3">
+                    <h4 class="footer_heading">Our Services</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">e-Pavilion</a></li>
+                            <li><a href="pages/e-coaching-page-coach.html">e-Coaching</a></li>
+                            <li><a href="pages/Live-Streaming.html">e-Streaming</a></li>
+                            <li><a href="pages/academylisting.html">e-Academy</a></li>
+                            <li><a href="pages/Partners-Page.html">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 my-3">
+                    <h4 class="footer_heading">Quick Links</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="pages/about.html">About Us</a></li>
+                            <li><a href="pages/Blog.html">Blog</a></li>
+                            <li><a href="pages/FAQs.html">FAQs</a></li>
+                            <li><a href="pages/Media-Releases.html">Media Releases</a></li>
+                            <li><a href="pages/career.html">Career</a></li>
+                            <li><a href="pages/contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 my-3">
+                    <h4 class="footer_heading">Subscribe to our Newsletter</h4>
+                    <form action="">
+                            <div class="search_wrap footer mb-20">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Email..." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>                            
+                            </div>
+                     </form>
+                     <h4 class="footer_heading mt-20">Follow Us</h4>  
+                     <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="images/Facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="images/Insta.svg" alt="insta"></a></li>
+                            <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="images/Linkedin.svg" alt="Linkedin"></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+   
+    <div class="footer_bottam_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <p>Copyright © 2022 Criconet. All rights reserved. </p>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="bttom_menu">
+                        <ul>
+                            <li><a href="pages/User-Agreement.html">User Agreement</a></li>
+                            <li><a href="pages/terms.html">Terms of Use</a></li>
+                            <li><a href="pages/Privacy-Page.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+
+<!-- All In One Form -->
+<section class="job-form d_padding d-none">
+    <div class="heading mb-4">
+        <div class="icon_wrap_red">
+            <img src="../images/left-heading-icon-red.svg" alt="icon">
+            <h2 class="mb-2">Contact us</h2>
+            <img src="../images/right-heading-icon-red.svg" alt="icon">
+        </div>
+        <div class="container">
+            <div class="job-form-wrap">
+                <form>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Name <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="Ex: Rakesh" name="name">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Email <span>*</span></label>
+                            <input type="email" class="form-control" placeholder="Ex: name@email.com" name="email">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Mobile Number <span>*</span></label>
+                            <input type="number" class="form-control" placeholder="Ex: +91 9999999999" name="email">
+                        </div>
+                    </div>
+                    <div class="group-input">
+                        <div class="form-group">
+                            <label for="usr">Select (for players) <span>*</span></label>
+                            <select  class="form-select">
+                                <option>BOWLER</option>
+                                <option>BATTER</option>
+                                <option>ALL ROUNDER </option>
+                                <option>WICKET KEEPER</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Select (for Coach) <span>*</span></label>
+                            <select  class="form-select">
+                                <option>BOWLER</option>
+                                <option>BATTER</option>
+                                <option>ALL ROUNDER </option>
+                                <option>WICKET KEEPER</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="group-input">
+                        <div class="form-group">
+                            <label for="usr">Your Package (for players) <span>*</span></label>
+                            <select  class="form-select">
+                                <option>Basic</option>
+                                <option>Standard</option>
+                                <option>Premium </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Your package (for Coach) <span>*</span></label>
+                            <select  class="form-select">
+                                <option>Basic</option>
+                                <option>Standard</option>
+                                <option>Premium </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Name of the Academy (for Academy) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="Name of the Academy">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Name of your business (for Partner) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="Name of your business">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Location (address) of the Academy (for Academy)</label>
+                            <div class="live-strem-input w-100">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Your Address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Location (address) of the Business (for Partner)</label>
+                            <div class="live-strem-input w-100">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Your Address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">I am a … <span>*</span></label>
+                            <select  class="form-select">
+                                <option>Organizer</option>
+                                <option>Coach</option>
+                                <option>Ground Owner </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Sponsor/Videographer (for match coverage)</label>
+                            <div class="live-strem-input w-100">
+                                <input type="text" class="form-control" placeholder="Sponsor/Videographer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Tournament Name (for Live streaming your match)</label>
+                            <div class="live-strem-input w-100">
+                                <input type="text" class="form-control" placeholder="Tournament Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Date of Tournament / Match (for Live streaming your match)</label>
+                            <div class="live-strem-input w-100">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Location (City) (Ground): (for Live streaming your match)</label>
+                            <div class="live-strem-input w-100">
+                                <input type="text" class="form-control" placeholder="Location">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="form-group">
+                            <label for="usr">Message (any other details/ request)</label>
+                            <div class="live-strem-input w-100">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="c_btn l_btn f_btn">
+                            <a href="#" class="text-center w-100">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- login and registral popup  -->
+<div class="modal modal-xl fade login" id="login" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header justify-content-end">
+            <div class="login-heading">
+                <h2>Login</h2>
+            </div>
+          <div class="close-btn cursor-pointer" data-bs-dismiss="modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0007 0.332031C26.2173 0.332031 33.6673 7.78203 33.6673 16.9987C33.6673 26.2154 26.2173 33.6654 17.0007 33.6654C7.78398 33.6654 0.333984 26.2154 0.333984 16.9987C0.333984 7.78203 7.78398 0.332031 17.0007 0.332031ZM22.984 8.66537L17.0007 14.6487L11.0173 8.66537L8.66732 11.0154L14.6507 16.9987L8.66732 22.982L11.0173 25.332L17.0007 19.3487L22.984 25.332L25.334 22.982L19.3507 16.9987L25.334 11.0154L22.984 8.66537Z" fill="#800000"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="login-form-wrap">
+                <div class="social-conect-btn">
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_google-icon.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_facebook.svg" alt="google-btn-icon">
+                            Login with Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="divider-or mb-3 mt-3">
+                    <span></span>
+                    <p>or</p> 
+                    <span></span>
+                </div>
+                <form class="mt-3 mb-3">
+                    <div class="login-input">
+                        <input type="text" class="form-control" placeholder="Enter Username/Mail ID/Phone No." name="email">
+                    </div>
+                     <div class="login-input">
+                        <input type="password" class="form-control" placeholder="Enter Password" name="email">
+                    </div>
+                    <div class="c_btn l_btn login-form">
+                        <a data-bs-toggle="modal" data-bs-target="#login">
+                             Login
+                        </a>
+                    </div>
+                </form>
+                <div class="have-account text-center">
+                    <p>Dont have an account?<a href="#" data-bs-toggle="modal" data-bs-target="#register">Register Now</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal modal-xl fade login" id="register" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header justify-content-end">
+            <div class="login-heading">
+                <h2>Register</h2>
+            </div>
+          <div class="close-btn cursor-pointer" data-bs-dismiss="modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0007 0.332031C26.2173 0.332031 33.6673 7.78203 33.6673 16.9987C33.6673 26.2154 26.2173 33.6654 17.0007 33.6654C7.78398 33.6654 0.333984 26.2154 0.333984 16.9987C0.333984 7.78203 7.78398 0.332031 17.0007 0.332031ZM22.984 8.66537L17.0007 14.6487L11.0173 8.66537L8.66732 11.0154L14.6507 16.9987L8.66732 22.982L11.0173 25.332L17.0007 19.3487L22.984 25.332L25.334 22.982L19.3507 16.9987L25.334 11.0154L22.984 8.66537Z" fill="#800000"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="login-form-wrap">
+                <div class="social-conect-btn">
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_google-icon.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_facebook.svg" alt="google-btn-icon">
+                            Login with Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="divider-or mb-3 mt-3">
+                    <span></span>
+                    <p>or</p> 
+                    <span></span>
+                </div>
+                <form class="mt-3 mb-3">
+                    <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" name="pswd">
+                        </div>
+                    </div>
+                    <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email ID" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone No." name="pswd">
+                        </div>
+                    </div>
+                    <div class="group-input position-relative mb-3">
+                        <div class="form-group ">
+                           <input class="form-control" id="password" name="password" placeholder="Enter Password" value="">
+                        </div>
+                        <span class="input-group-append password-eye">
+                              <i class="fa fa-eye-slash" id="togglePassword"></i>
+                        </span>
+                    </div>
+                     <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Re-enter Password" name="email">
+                        </div>
+                    </div>
+                    <div class="group-input mb-3">
+                            <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Referral Code (Optional)" name="email">
+                            </div>
+                    </div>
+                     <div class="form-check mb-3 tearm-condition ms-2">
+                      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                      <label class="form-check-label" for="check2">By creating an account, I agree to your <span>Terms & Conditions</span></label>
+                    </div>
+                    <div class="c_btn l_btn login-form">
+                        <a data-bs-toggle="modal" data-bs-target="#VerifyOTP">
+                             Register
+                        </a>
+                    </div>
+                </form>
+                <div class="have-account text-center">
+                        <p>Already have an account?<a href="#" data-bs-toggle="modal" data-bs-target="#login">Login</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End login and registral popup  -->
+<!-- veryfy otp  -->
+<div class="modal modal-xl fade login" id="VerifyOTP" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header justify-content-end">
+            <div class="login-heading">
+                <h2>Verify OTP</h2>
+            </div>
+          <div class="close-btn cursor-pointer" data-bs-dismiss="modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0007 0.332031C26.2173 0.332031 33.6673 7.78203 33.6673 16.9987C33.6673 26.2154 26.2173 33.6654 17.0007 33.6654C7.78398 33.6654 0.333984 26.2154 0.333984 16.9987C0.333984 7.78203 7.78398 0.332031 17.0007 0.332031ZM22.984 8.66537L17.0007 14.6487L11.0173 8.66537L8.66732 11.0154L14.6507 16.9987L8.66732 22.982L11.0173 25.332L17.0007 19.3487L22.984 25.332L25.334 22.982L19.3507 16.9987L25.334 11.0154L22.984 8.66537Z" fill="#800000"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body otp-verify">
+            <form action="" class="mt-3">
+                <div class="otp">
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)'onkeyup='tabChange(4)' maxlength=1 >
+                </div>
+                <div class="c_btn l_btn f_btn mt-4 text-center">
+                    <a href="pages/about.html">Conform</a>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- otp  -->
+    <!-- boostrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <script>
+            jQuery(".dropdown-toggle, .dropdown-menu ").hover(function () {
+                console.log(".dropdown-toggle");
+                jQuery(this).toggleClass("show");
+            });
+        </script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- main js  -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

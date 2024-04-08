@@ -1,0 +1,567 @@
+/* Media Query for Responsive */
+@media (max-width: 1300px) {
+    .about-page .two-left-img img, .about-page .two-right-img img{
+        height: 370px;
+    }
+}
+@media (max-width: 1280px) {
+    ul.nav.navbar-nav li.nav-item.dropdown {
+        margin-left: 5px;
+    }
+}
+@media (max-width: 1200px) {
+    .nav.navbar-nav {
+        background-color: #0E2245;
+    }
+    .search_wrap input {
+        margin-bottom: 10px;
+        width: 94%;
+    }
+    .about_wrap {
+        padding: 100px 10px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 0;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 0;
+    }
+    .about-page .two-left-img img, .about-page .two-right-img img{
+        height: 300px;
+        max-width: 210px;
+    }
+    .badge-about{
+        left: 12%;
+    }
+    .c_btn a{
+        padding: 0 15px;
+    }
+    .coach-list-wrap{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .coach-right-wrap {
+        width: 30%;
+    }
+    .coach-left-wrap {
+        width: 70%;
+    }
+    .main_img img{
+        height: 400px;
+        width: 250px;
+    }
+    .main_bg{
+        max-width: 300px;
+    }
+}
+@media (max-width: 991px) {
+    .main_hero_sec{
+        padding: 110px 0px 80px 0;
+    }
+    .main_hero_sec .hero_right {
+        top: 30px;
+    }
+    .service_tab_wrap .accordion-item .accordion-body {
+        padding: 70px 0;
+    }
+    .two_img {
+        position: static;
+        margin-top: -24rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .about_wrap {
+        padding: 100px 30px;
+    }
+    .benefits_slider_arrow, .blog_slider_arrow{
+        width: 18%;
+    }
+    .two_main_bg {
+        text-align: center;
+    }
+    .two_main_bg img {
+        max-width: 35rem;
+    }
+    .about-page .two-left-img img, .about-page .two-right-img img {
+        height: 350px;
+        max-width: 250px;
+    }
+    .badge-about {
+        left: 32%;
+        bottom: 25%;
+    }
+    .founder_right{
+        top: 3rem;
+    }
+    .cta_img {
+        position: static;
+        max-width: 380px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .cta_text_wrap h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .cta_btn_wrap img{
+        max-width: 10rem;
+    }
+    .cta_wrap{
+        padding: 30px 20px 0;
+    }
+    h4.footer_heading,
+    .footer_btn a{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .footer_menu ul li a{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .blog-card{
+        max-width: 230px;
+    }
+    .main_img img{
+        height: 350px;
+        width: 200px;
+    }
+    .main_bg {
+        max-width: 300px;
+    }
+    .coach-list-main {
+        flex-direction: column-reverse;
+    }
+    .coach-left-wrap,.coach-right-wrap{
+        width: 100%;
+    }
+    .coach-list-right {
+        display: flex;
+        gap: 30px;
+    }
+    .coach-recent-view {
+        flex: 0 0 47%;
+    }
+    .stream-slider .swiper-button-next{
+        right: 20px;
+    }
+    .stream-slider .swiper-button-prev{
+        right: 10%;
+    }
+    .select-coach{
+        margin-left: 0;
+    }
+    .coach_slider .swiper-button-prev,
+    .coach_slider .swiper-button-next{
+        bottom: 2%;
+    }
+    .coach_slider .swiper-pagination{
+        width: 96% !important;
+        right: auto;
+        left: auto !important;
+        bottom: 65px;
+    }
+    .filter-head{
+        flex-wrap: wrap;
+    }
+    .live-strem-input {
+        width: auto;
+        flex: 1 1 40%;
+    }
+    .filter-head .c_btn.l_btn.ms-2.f_btn {
+        flex: 0 0 100%;
+    }
+    .steap-icon-one::before,
+    .steap-icon-two::before{
+        left: 100px;
+    }
+    .swiper.testimonials_thumb {
+        width: 400px;
+    }
+}
+@media (max-width: 767px){
+    .hero_left h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .main_img img {
+        height: 400px;
+        width: 250px;
+    }
+    .faq-right {
+        margin-top: 20px;
+    }
+    .notice_board .main_img img {
+        height: 400px;
+        width: 250px;
+    }
+    .main_bg{
+        max-width: 350px;
+    }
+    .service_tab_wrap .accordion-item .accordion-body .heading,
+    .swiper.coach_slider{
+        margin: 50px 0 0;
+    }
+    .testimonials_main{
+        display: block;
+    }
+    .swiper.testimonials_thumb{
+        display: none;
+    }
+    .main_slider_content{
+        margin: 10px 0 0;
+    }
+    .cta_wrap{
+        padding-bottom: 0;
+    }
+    .cta_img{
+        position: static;
+        margin-top: 20px;
+    }
+    h4.footer_heading,
+    .footer_btn a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .footer_menu ul li a,
+    .search_wrap.footer button {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer_btn a img{
+        max-width: 20px;
+    }
+    h4.footer_heading{
+        margin-bottom: 10px;
+    }
+    .cta_text_wrap h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .mission_box{
+        min-height: auto;
+    }
+    body:has(.about-page-sec) .main_img img {
+        height: 350px;
+    }
+    .badge-about {
+        left: 21%;
+        bottom: 15%;
+    }
+    .two_main_bg img {
+        max-width: 25rem;
+    }
+    .stream-slider .swiper-button-next, .coach_slider .swiper-button-next{
+        bottom: 10px;
+        left: 50%;
+    }
+    .stream-slider .swiper-button-prev, .coach_slider .swiper-button-prev{
+        bottom: 10px;
+        left: 40%;
+    }
+    .two_img {
+        margin-top: -20rem;
+    }
+    section.inner-cta-sec {
+        margin-top: 50px;
+    }
+    .academies-details-heading{
+        margin-left: 0;
+    }
+    .benefits_wrap{
+        padding: 30px;
+    }
+    .coach-list-main{
+        padding: 0;
+        margin: 0;
+    }
+    .live-strem-lable,
+    .live-strem-input{
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .filter-head span.text-center{
+        width: 100%;
+    }
+    .live-strem-lable label{
+        font-size: 14px;
+    }
+    .live-strem-group {
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .social-conect-btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .login-google-btn a img {height: 20px;}
+    .login-google-btn a{
+        padding: 0 20px;
+    }
+    section.testimonials_sec .heading {
+        margin-bottom: 20px;
+    }
+    .privacy-policy-sec-wrap, .blog-hero-sec-wrap-inner{
+        padding: 0 30px;
+        left: 0;
+    }
+    .checkout-price p.price, .checkout-date-time p.date-time {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .container.camera-bitton ul li{
+        margin: 5px 10px;
+    }
+    .steap-icon-one::before, .steap-icon-two::before{
+        content: unset;
+    }
+    .icon-steap,
+    .refral-links{
+        flex-wrap: wrap;
+    }
+    .social-link-refrall{
+        margin-top: 10px;
+    }
+    .refral-links input{
+        padding: 0 100px 0 25px;
+    }
+    .coach-update-tab .live-strem-input,
+    .coach-update-tab .live-strem-lable{
+        width: 100%;
+    }
+    .from-group{
+        flex-wrap: wrap;
+    }
+    .from-group-lable,
+    .from-group-input{
+        width: 100%;
+    }
+    .live-strem-header h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 575px){
+    .c_btn a {
+        font-size: 14px;
+    }
+    .coach-list-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coach-list-right{
+        display: block;
+    }
+    .recent-coach-img img {
+        height: 60px;
+        width: 60px;
+    }
+    .c_btn.ml-30{
+        margin-left: 0px;
+    }
+    .two-left-img img, .two-right-img img{
+        height: auto;
+        max-width: 155px;
+    }
+    .two_img {
+        margin-top: -17rem;
+    }
+    .big-p a {
+        padding: 0 25px !important;
+    }
+    .benefits_slider_arrow, .blog_slider_arrow {
+        width: 40%;
+    }
+    .brand_slide img{
+        object-fit: contain;
+    }
+    .cta_btn_wrap a img{
+        max-width: 10rem;
+    }
+    .search_wrap.footer .button_shadow::before,
+    .search_wrap.footer .button_shadow::after{
+        width: 117px !important;
+    }
+    .about-page .two-left-img img, .about-page .two-right-img img {
+        height: 320px;
+        max-width: 180px;
+    }
+    .two_main_bg img {
+        max-width: 21rem;
+    }
+    .badge-about {
+        left: 15%;
+        bottom: 15%;
+    }
+    .badge-about p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .steap-slider-navigation{
+        bottom: 20%;
+    }
+    .fliter_wrap .search_wrap input{
+        margin-bottom: 0;
+        max-width: 70%;
+    }
+    .blog-card {
+        max-width: 300px;
+        margin: 5px auto;
+    }
+    .pagination ul li a{
+        height: 35px;
+        width: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .pagination ul li svg {
+        height: 35px;
+    }
+    .main_img img{
+        height: 360px;
+        width: 230px;
+    }
+    .fliter_wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: start;
+    }
+    .popup-icon svg {
+        height: 60px;
+    }
+    .e-coach-popup-wrap{
+        right: 0;
+    }
+    section.coach-slider-sec:before{
+        width: auto;
+        height: auto;
+    }
+    .coach_list_tab ul.nav.nav-tabs,
+    .tab-content{
+        padding: 0;
+    }
+    .home-about-btn-wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .hero_left h1{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .hero_btn_wrap {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start !important;
+    }
+    .privacy-policy-sec-wrap, .blog-hero-sec-wrap-inner{
+        padding: 0 10px;        
+        top: 40%;
+    }
+    .booking-body {
+        padding: 20px;
+    }
+    .create-profie-bottom ul{
+        flex-wrap: wrap;
+    }
+    .create-profie-bottom ul li{
+        flex: 1 1 30%;
+        margin: 5px;
+    }
+    .steap-icon{
+        padding: 20px;
+    }
+    .steap-icon svg {
+        height: 40px;
+        width: 40px;
+    }
+    .referral-sec{
+        padding: 50px 20px;
+    }
+}
+@media (max-width: 424px) {
+    .c_btn a{
+        padding: 0 15px;
+    }
+    .two_main_bg img {
+        max-width: 18rem;
+    }
+    .stream-slider .swiper-button-prev, .coach_slider .swiper-button-prev {
+        left: 38%;
+    }
+    .coach_slider .swiper-pagination{
+        bottom: 60px;
+    }
+    .two-left-img img, .two-right-img img {
+        height: auto;
+        max-width: 150px;
+    }
+    .about_wrap {
+        padding: 130px 30px 60px;
+    }
+    .cta_wrap{
+        padding: 30px 30px 0;
+    }
+    footer{
+        padding: 50px 0 20px;
+    }
+    .bttom_menu ul li:first-child{
+        padding-left: 0;
+    }
+    .bttom_menu ul li{
+        padding: 0 10px;
+    }
+    .bttom_menu ul li a{
+        font-size: 14px;
+    }
+    .badge-about {
+        left: 8%;
+    }
+    .about-page .two-left-img img, .about-page .two-right-img img {
+        height: 200px;
+        max-width: 150px;
+    }
+    .calendar-day span{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .checkout-date-price{
+        flex-direction: column;
+        align-items: start;
+    }
+    .checkout-price{
+        margin-left: 0 !important;
+        padding-top: 10px;
+    }
+    .checkout-date-time{
+        border-right: 0;
+        border-bottom: 2px solid #d3d3d3;
+        padding-bottom: 10px;
+    }
+    .booking-profile{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 374px){
+    .two_img {
+        margin-top: -13rem;
+    }
+    .two_main_bg img {
+        max-width: 18rem;
+    }
+    .about-page .two-left-img img, .about-page .two-right-img img {
+        height: 230px;
+        max-width: 130px;
+    }
+    .badge-about p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .badge-about{
+        padding: 8px 10px;
+    }
+    .two_main_bg img {
+        max-width: 16rem;
+    }
+    .two-left-img img, .two-right-img img {
+        height: auto;
+        max-width: 130px;
+    }
+}
